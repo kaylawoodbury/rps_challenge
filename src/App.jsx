@@ -1,11 +1,13 @@
 import React from 'react';
-import GameSelection from "./components/DisplayGameOptions";
+import Option from "./DisplayGameOptions";
 
 
 function App() {
   return (
     <div className="App">
-      {GameSelection}
+      <h2>Play Rock Paper Scissors</h2>
+      <h3>Select your choice from the options below:</h3>
+      {Option}
     </div>
   );
 }

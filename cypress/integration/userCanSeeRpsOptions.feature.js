@@ -6,11 +6,11 @@
 
 describe("User can see three options on the page", () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000');
+    cy.visit('http://localhost:3001');
   })
 
   it('displays first option', () => {
-    cy.get('#rock').within(() => {
+    cy.get('#option-rock').within(() => {
       cy.get(('.image')).should('exist');
       cy.get('.description').should('contain', 'Attended full stack development bootcamp.');
       cy.get('.rockbutton').should('exist');
@@ -18,7 +18,7 @@ describe("User can see three options on the page", () => {
   });
 
   it('displays second item', () => {
-    cy.get('#paper').within(() => {
+    cy.get('#option-paper').within(() => {
       cy.get(('.image')).should('exist');
       cy.get('.description').should('contain', 'Worked with SQL to import, organize and manipulate client data into a relational database.');
       cy.get('.paperbutton').should('exist');
@@ -26,7 +26,7 @@ describe("User can see three options on the page", () => {
   });
 
   it('displays third item', () => {
-    cy.get('#scissors').within(() => {
+    cy.get('#option-scissors').within(() => {
       cy.get(('.image')).should('exist');
       cy.get('.description').should('contain', "Ecocion was acquired by Intelex, held the same job here as at Intelex.");
       cy.get('.scissorbutton').should('exist');
