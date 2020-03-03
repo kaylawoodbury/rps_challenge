@@ -42,7 +42,7 @@ class App extends Component {
             <button id="scissorbutton" onClick={event => this.handleButtonClick(event)}>Play w/ Scissors</button>
           </div>
         </div><br/><br/><br/>
-        <div id="rsults">
+        <div id="results">
           <h2>Result:</h2><br/>
           <h3>{this.state.results}</h3>
         </div>

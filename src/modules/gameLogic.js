@@ -6,10 +6,10 @@ const computer = () => {
 	return choice
 }
 
-const winner = (player1, player2) => {
+const winner = (player, computer) => {
 
 	let result
-	switch ([player1, player2].join()) {
+	switch ([player, computer].join()) {
 		case ['rock', 'scissors'].join():
 		case ['scissors', 'paper'].join():
 		case ['paper', 'rock'].join():
