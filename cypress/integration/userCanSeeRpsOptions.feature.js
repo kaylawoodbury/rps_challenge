@@ -10,26 +10,26 @@ describe("User can see three options on the page", () => {
   })
 
   it('displays first option', () => {
-    cy.get('#option-rock').within(() => {
-      cy.get(('.image')).should('exist');
-      cy.get('.description').should('contain', 'Attended full stack development bootcamp.');
-      cy.get('.rockbutton').should('exist');
+    cy.get('#rockcontainer').within(() => {
+      cy.get(('#rockimg')).should('exist');
+      cy.get('#rock').should('contain', 'Rock');
+      cy.get('#rockbutton').should('exist');
     })
   });
 
   it('displays second item', () => {
-    cy.get('#option-paper').within(() => {
-      cy.get(('.image')).should('exist');
-      cy.get('.description').should('contain', 'Worked with SQL to import, organize and manipulate client data into a relational database.');
-      cy.get('.paperbutton').should('exist');
+    cy.get('#papercontainer').within(() => {
+      cy.get('#paperimg').should('exist');
+      cy.get('#paper').should('contain', 'Paper');
+      cy.get('#paperbutton').should('exist');
     })
   });
 
   it('displays third item', () => {
-    cy.get('#option-scissors').within(() => {
-      cy.get(('.image')).should('exist');
-      cy.get('.description').should('contain', "Ecocion was acquired by Intelex, held the same job here as at Intelex.");
-      cy.get('.scissorbutton').should('exist');
+    cy.get('#scissorscontainer').within(() => {
+      cy.get('#scissorsimg').should('exist');
+      cy.get('#scissors').should('contain', 'Scissors');
+      cy.get('#scissorbutton').should('exist');
     })
   });
 });  

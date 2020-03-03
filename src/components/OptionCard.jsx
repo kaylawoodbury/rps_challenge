@@ -2,11 +2,13 @@ import React from "react";
 
 const OptionCard = ({options}) => {
   return (
-    <div id="optioncardcontainer">
+    <div>
       <div class="content">
-        <img src={options.image}/>
-        <h2>{options.option}</h2>
-        <button id="optionbutton">{options.play}</button>
+        <div class="image">
+          <img src={options.image} />
+        </div>
+        <h3>{options.name}</h3>
+        <button id="optionbutton">{options.button}</button>
       </div>
     </div>
   );
