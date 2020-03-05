@@ -48,7 +48,7 @@ Use
 ## License  
 [MIT-license](https://en.wikipedia.org/wiki/MIT_License)
 
-### Acknowledgement  
+### Acknowledgement 
 Challenge from [Craft Academy](https://craftacademy.se).  
 [Thomas Ochman](https://github.com/tochman/rps_react_demo)
 
