@@ -41,14 +41,19 @@ $ yarn start
 Use 
 
 ## Updates/Improvements   
-- F
-- Add additional styling
-- Add registration button 
+- Fix tests so that they correctly stub out the computer selection
+- Add/fix additional styling
+- Finish a tally section, and show percentage won/lost
+- Add animations to simulate game play
+- Add unit tests
+
 
 ## License  
 [MIT-license](https://en.wikipedia.org/wiki/MIT_License)
 
 ### Acknowledgement 
 Challenge from [Craft Academy](https://craftacademy.se).  
-[Thomas Ochman](https://github.com/tochman/rps_react_demo)
+[Thomas Ochman](https://github.com/tochman/rps_react_demo) - used base game logic from Demo
+[Blake Erickson](https://github.com/blake-futchi/rock_paper_scissors) - helped with trying to correct testing with stubs
+
 

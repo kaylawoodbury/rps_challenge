@@ -25,7 +25,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App" id="app">
         <h2>Play Rock Paper Scissors</h2>
         <h3>Select your choice from the options below:</h3>
         <div id="playoptions">
