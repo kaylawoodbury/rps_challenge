@@ -17,7 +17,7 @@ class App extends Component {
   async handleButtonClick(event) {
 		let player = event.target.name
     let computer = computerSelection()
-    let results = await assessGame(player, computer);
+    let results = await game(player, computer);
 		this.setState({ playerChoice: player, computerChoice: computer, results: results})
 	}
 
@@ -26,10 +26,6 @@ class App extends Component {
       <div className="App">
         <h2>Play Rock Paper Scissors</h2>
         <h3>Select your choice from the options below:</h3>
-        <div id="tally">
-          <h3>Tally</h3>
-            {gameTally}
-        </div>
         <div id="playoptions">
           <div id="rockcontainer">
             <h3 id="rock">Rock</h3>
@@ -49,7 +45,12 @@ class App extends Component {
         </div><br/><br/><br/>
         <div id="results">
           <h2>Result:</h2><br/>
+          <h3>Your choice:  Computer Choice:</h3>
           <h3>{this.state.results}</h3>
+          <div id="tally">
+            <h3>Tally</h3>
+            {gameTally}
+          </div>
         </div>
       </div>
     );

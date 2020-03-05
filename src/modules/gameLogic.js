@@ -28,7 +28,6 @@ const game = (player, computer) => {
 			result = tie
 			break;
 	}
-
 	return result
 };
 
