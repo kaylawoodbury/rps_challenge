@@ -47,10 +47,7 @@ class App extends Component {
           <h2>Result:</h2><br/>
           <h3>Your choice:  Computer Choice:</h3>
           <h3>{this.state.results}</h3>
-          <div id="tally">
-            <h3>Tally</h3>
-            {gameTally}
-          </div>
+          
         </div>
       </div>
     );
