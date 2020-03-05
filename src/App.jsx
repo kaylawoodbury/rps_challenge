@@ -2,22 +2,23 @@ import React, { Component } from 'react';
 import rock from './data/images/rock.png'
 import paper from './data/images/paper.png'
 import scissors from './data/images/scissors.png'
-import { computer, winner } from './modules/gameLogic'
+import {computerSelection, game, gameTally } from './modules/gameLogic'
 
 
 class App extends Component {
 	state = {
 		playerChoice: '',
 		computerChoice: '',
-		showMessage: false,
-		results: ''
+    results: false,
+    playerTally: 0,
+    computerTally: 0
   }
   
-  handleButtonClick(event) {
-		debugger
-		let playerChoice = event.target.name
-		let computerChoice = computer()
-		this.setState({ playerChoice: playerChoice, computerChoice: computerChoice, showMessage: true, results: winner(playerChoice, computerChoice) })
+  async handleButtonClick(event) {
+		let player = event.target.name
+    let computer = computerSelection()
+    let results = await assessGame(player, computer);
+		this.setState({ playerChoice: player, computerChoice: computer, results: results})
 	}
 
   render() {
@@ -25,6 +26,10 @@ class App extends Component {
       <div className="App">
         <h2>Play Rock Paper Scissors</h2>
         <h3>Select your choice from the options below:</h3>
+        <div id="tally">
+          <h3>Tally</h3>
+            {gameTally}
+        </div>
         <div id="playoptions">
           <div id="rockcontainer">
             <h3 id="rock">Rock</h3>
