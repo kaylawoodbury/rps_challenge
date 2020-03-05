@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import rock from './data/images/rock.png'
-import paper from './data/images/paper.png'
-import scissors from './data/images/scissors.png'
-import {computerSelection, game, gameTally } from './modules/gameLogic'
+import rock from './data/images/rock.png';
+import paper from './data/images/paper.png';
+import scissors from './data/images/scissors.png';
+import {computerSelection, game, gameTally } from './modules/gameLogic';
 
 
 class App extends Component {
@@ -20,7 +20,7 @@ class App extends Component {
 		let player = event.target.name
     let computer = computerSelection()
     let tally = gameTally()
-		this.setState({ player: player, computer: computer, results: game(player, computer), showMessage: true})
+		this.setState({ player: player, computer: computer, results: game(player, computer), showMessage: true, playerTally: playerTally, computerTally: computerTally})
 	}
 
   render() {
@@ -51,6 +51,9 @@ class App extends Component {
         <h3>{`Your choice: ${this.state.player}`}<br/>{`Computer Choice: ${ this.state.computer}`}</h3><br/>
           <h2>Result:</h2>
           <h3>{this.state.results}</h3>
+          </div>
+          <div id="tally">
+            {this.state.tally}
           </div>
         </>
         }
