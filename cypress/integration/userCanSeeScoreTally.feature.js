@@ -3,11 +3,11 @@ describe("User can see score tally section", () => {
     cy.visit("http://localhost:3001/");
   })
 
-  it('for their own score', () => {
+  xit('for their own score', () => {
     cy.get('#usertally').should('exist')
   });
 
-  it('for the computers score', () => { 
+  xit('for the computers score', () => { 
     cy.get('#computertally').should('exist')
   });
 });
