@@ -1,26 +1,26 @@
-# The Cooper Challenge
+# RPS Challenge
 ### Author   
 [Kayla Woodbury](https://github.com/kaylawoodbury)
 ## Built with  
-**Programs:** React v.16.12.0, CSS    
-**Testing frameworks:** Cypress, Enzyme  
-**Deployed at:** [Netlify](https://kpcooper.netlify.com/).
+React v.16.12.0, CSS   
+**Testing frameworks:** Cypress  
+**Deployed at:** [Netlify](https://kayla-rps.netlify.com/) 
 
 ## The code   
-This project is the client facing side of our Cooper Test application. Our repositories for the Cooper API built in Rails can be found [here](https://github.com/kaylawoodbury/rps_challenge).
+This application is a digital version of the game Rock Paper Scissors. In this application, the user can select what they want to play with (rock, paper or scissors) and then play against the computer that will randomly select what item to play. Standard rules apply where paper beats rock, rock beats scissors and scissors beats paper. [Github Page](https://github.com/kaylawoodbury/rps_react).
 
 ## Getting started
 ### Dependencies  
 * Yarn
 * React
-* Enzyme
 * Cypress
+* Chance
 * Axios
 
 
-
 ### Setup   
-To test this application, fork the repo to your own GitHub account and clone it to your local workspace. 
+To test this application, fork the repo to your own GitHub account and clone it to your local workspace. </br>
+*Note:*Be sure to set up backend api first (noted above), in order to fully interact with the application. 
 
 Install all of the dependencies:    
 ```
@@ -33,21 +33,22 @@ $ yarn test
 Start cypress and run the feature tests:  
 ```
 $ yarn run cy:open
-```
-Start the backend api (if already configured) in a separate terminal (only run this command for the Rails application):
-```
-$ rails s
-```
-Start the React application and run it on your local host:
-```
 $ yarn start
 ```
 
+
+### User Stories 
+Use 
+
 ## Updates/Improvements   
-- 
+- F
+- Add additional styling
+- Add registration button 
 
 ## License  
 [MIT-license](https://en.wikipedia.org/wiki/MIT_License)
 
-### Acknowledgement  
-Material provided by [Craft Academy](https://craftacademy.se).  
+### Acknowledgement 
+Challenge from [Craft Academy](https://craftacademy.se).  
+[Thomas Ochman](https://github.com/tochman/rps_react_demo)
+
