@@ -30,8 +30,30 @@ $ yarn run cy:open
 $ yarn start
 ```
 
-### User Stories 
-Use 
+### User Stories
+``` 
+as a player
+in order to play the game
+I would like to choose to play with either rock paper of scissors
+```
+
+``` 
+as a player
+in order to play the game
+I would like to see the computers' selection
+```
+
+``` 
+as a player
+in order to play the game
+I would like to see the results of the game
+```
+
+``` 
+as a player
+in order to play the game
+I would like to see a tally of the scores
+```
 
 ## Updates/Improvements   
 - Fix tests so that they correctly stub out the computer selection
@@ -39,6 +61,7 @@ Use
 - Finish a tally section, and show percentage won/lost
 - Add animations to simulate game play
 - Add unit tests
+- refactor to utilize components more and to have less on the main app.jsx file
 
 
 ## License  

@@ -22,7 +22,7 @@ code {
   border-radius: 10px;
   background-color:rgb(188, 201, 214);
   padding-top: 20px;
-  padding-left: 40px;
+  padding-left: 70px;
   padding-right: 40px;
   column-count: 3;
   height: 210px;
@@ -41,9 +41,6 @@ code {
   background-color: whitesmoke;
   width: 140px;
   text-align: center;
-  
-
-
 }
 
 #papercontainer {
